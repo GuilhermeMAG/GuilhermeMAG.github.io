@@ -1764,8 +1764,9 @@ input, select, textarea {
 		}
 
         .image.avatar48 img{
-	         -webkit-transform: rotate(270deg);
-			-ms-transform: rotate(270deg);
+					border-radius: 120px;
+					-webkit-transform: rotate(270deg);
+			    -ms-transform: rotate(270deg);
         }
 
 .image.fit {
