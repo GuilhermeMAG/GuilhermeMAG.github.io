@@ -2250,7 +2250,10 @@ input, select, textarea {
 			#main > section.three {
 				background-color: #ecf1f1;
 			}
-
+            #main > section.three.pre {
+				text-align: left;
+				flex: auto;
+            }
 			#main > section.four {
 				background-color: #e8edec;
 			}
