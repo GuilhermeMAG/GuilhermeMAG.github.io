@@ -67,6 +67,9 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+div#adf {
+	position: relative;
+}
 
 /* Basic */
 
