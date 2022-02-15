@@ -1,3 +1,3 @@
 # GuilhermeMAG.github.io
 
-Portfólio de Guilherme Augusto Borges Casagrande.
+Portfólio em desenvolvimento de Guilherme Augusto Borges Casagrande.
