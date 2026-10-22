@@ -248,13 +248,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="margin-bottom: 1.5rem;">
           <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Destaques de Engenharia:</h4>
           <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.7;">
-            <li>Deploy contínuo em produção na Vercel (<a href="https://guihub-events-web-chi.vercel.app/" target="_blank" style="color: var(--cyan);">Demo ao Vivo</a>).</li>
-            <li>Arquitetura modular de componentes, validação estrita de formulários e geração dinâmica de ingressos.</li>
+            <li>Arquitetura modular e componentizada em React e Next.js com foco em alta performance.</li>
+            <li>Validação estrita de formulários, fluxo de credenciamento e geração dinâmica de ingressos.</li>
+            <li>Integração com APIs transacionais e armazenamento seguro de dados de participantes.</li>
           </ul>
         </div>
         <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
           <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">React</span>
-          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Vercel Deploy</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Next.js</span>
           <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Full-Stack</span>
           <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Ticketing</span>
         </div>
