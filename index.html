@@ -1,197 +1,633 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <title>Guilherme Casagrande</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script data-ad-client="ca-pub-3113865661328968" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guilherme Casagrande | Tech Lead & Software Architect</title>
+  
+  <!-- SEO & OpenGraph Meta Tags -->
+  <meta name="description" content="Portfólio de Guilherme Casagrande. Tech Lead, Arquiteto de Software e Engenheiro de Agentes de IA especializado em plataformas SaaS corporativas e alta performance." />
+  <meta name="keywords" content="Tech Lead, Software Architect, AI Agents, Full-Stack, GraphQL, Next.js, React Native, Node.js, TypeScript, Guilherme Casagrande, SaaS Enterprise" />
+  <meta name="author" content="Guilherme Casagrande" />
+  
+  <meta property="og:title" content="Guilherme Casagrande | Tech Lead & Software Architect" />
+  <meta property="og:description" content="Arquitetura SaaS corporativa, ecossistema de Agentes Autônomos de IA e soluções de alta performance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://guilhermemag.github.io" />
+  <meta property="og:image" content="https://guilhermemag.github.io/images/MeuAvatarGit.jpg" />
+
+  <!-- Google Fonts: Inter & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos Customizados Neo-Tech -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body class="is-preload">
+<body>
 
-    <!-- Header -->
-    <div id="header">
+  <!-- Canvas Interativo de Partículas -->
+  <canvas id="particles-canvas"></canvas>
 
-        <div class="top">
+  <!-- Efeitos de Fundo Radiante -->
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
 
-            <!-- Logo -->
-            <div id="logo">
-                <span class="image avatar48"><img src="images/MeuAvatarGit.jpg" alt="Programador-Sql-Sr-Guilherme_Casagrande"/></span>
-                <h1 id="title">Guilherme Augusto Borges Casagrande</h1>
-                <p>Programador Sql Sr</p>
+  <!-- ==========================================
+       NAVBAR
+       ========================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="gradient-text">Guilherme</span>.dev
+        <span class="brand-badge">TECH LEAD</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#stacks" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#tooling" class="nav-link">Tooling IA</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contato" class="btn-nav">Vamos Conversar</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="pulse-dot"></span>
+            <span>Disponível para Liderança Técnica & Arquitetura</span>
+          </div>
+
+          <h1 class="hero-title">
+            Olá, eu sou <br/>
+            <span class="gradient-text">Guilherme Casagrande</span>
+          </h1>
+
+          <div class="typewriter-box">
+            <span id="typewriter-text"></span>
+            <span class="typewriter-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            Arquiteto de Software e Tech Lead especializado na concepção e escala de 
+            <b>plataformas SaaS corporativas</b> de alta disponibilidade e ecossistemas de 
+            <b>Agentes Autônomos de Inteligência Artificial</b> com foco em eficiência de recursos e segurança defensiva.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn-primary">
+              <span>Explorar Projetos Autorais</span>
+              <span>→</span>
+            </a>
+            <a href="#contato" class="btn-secondary">
+              <span>Entrar em Contato</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <h4>SaaS B2B</h4>
+              <p>GraphQL & Multi-tenant</p>
             </div>
-
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li><a href="#top" id="top-link"><span class="icon fa-home">Home</span></a></li>
-                    <li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Projetos</span></a></li>
-                    <li><a href="#about" id="about-link"><span class="icon fa-user">Sobre Mim</span></a></li>
-                    <li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contato</span></a></li>
-                </ul>
-            </nav>
-
+            <div class="metric-item">
+              <h4>IA Agêntica</h4>
+              <p>MCP & CodeGraph AST</p>
+            </div>
+            <div class="metric-item">
+              <h4>High SLA</h4>
+              <p>Escala & Resiliência</p>
+            </div>
+          </div>
         </div>
 
-        <div class="bottom">
+        <div class="hero-avatar-box">
+          <div class="avatar-wrapper">
+            <div class="avatar-inner">
+              <img src="images/MeuAvatarGit.jpg" alt="Guilherme Casagrande" />
+            </div>
+          </div>
 
-            <!-- Social Icons -->
-            <ul class="icons">
+          <div class="avatar-floating-card card-top-right">
+            <span>⚡</span>
+            <div>
+              <strong style="color: var(--cyan); display: block;">Tech Lead</strong>
+              <small style="color: var(--text-muted);">SaaS & Cloud Native</small>
+            </div>
+          </div>
 
-                <!--<li><a href="https://www.facebook.com/GuilhermeMAG30/" target="_blank" class="icon fa-facebook" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Facebook</span></a></--li>
-                    <li><a href="https://www.instagram.com/magtech30/" target="_blank" class="icon fa-instagram" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Instagram</span></a></li>-->
-                <li><a href="https://github.com/GuilhermeMAG" target="_blank" class="icon fa-github" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Github</span></a></li>
-                <li><a href="https://www.linkedin.com/in/guilherme-casagrande-771a27160/" target="_blank" class="icon fa-linkedin" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="label">Linkedin</span></a></li>
-            </ul>
+          <div class="avatar-floating-card card-bottom-left">
+            <span>🤖</span>
+            <div>
+              <strong style="color: #bf5af2; display: block;">Autonomous Agents</strong>
+              <small style="color: var(--text-muted);">LLM Context & Tooling</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ==========================================
+         SOBRE & PILARES
+         ========================================== -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engenharia Sênior</span>
+          <h2 class="section-title">Sobre Mim & <span class="gradient-text">Filosofia de Atuação</span></h2>
+          <p class="section-desc">
+            Com atuação abrangente de ponta a ponta, alinho visão estratégica de produto à execução técnica rigorosa, 
+            garantindo que cada arquitetura seja resiliente, econômica e escalável.
+          </p>
         </div>
 
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-icon">🏛️</span>
+            <h3 class="pillar-title">Arquitetura SaaS Enterprise</h3>
+            <p class="pillar-desc">
+              Modelagem de microsserviços desacoplados, APIs GraphQL de alto rendimento, consistência transacional e isolamento estrito de dados multi-tenant.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-icon">🧠</span>
+            <h3 class="pillar-title">Engenharia de IA & Agentes</h3>
+            <p class="pillar-desc">
+              Implementação de protocolos de contexto (MCP), memórias semânticas de longo prazo, grafos AST e orquestração de workflows autônomos.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-icon">⚡</span>
+            <h3 class="pillar-title">Performance & Economia</h3>
+            <p class="pillar-desc">
+              Otimização cirúrgica de tempo de resposta, profiling de memória, redução massiva de consumo de tokens em IA e corte real de custos em nuvem.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-icon">🛡️</span>
+            <h3 class="pillar-title">Segurança Shift-Left</h3>
+            <p class="pillar-desc">
+              Auditorias automáticas de vulnerabilidades em pipelines, autenticação federada (Cognito/OAuth2), RBAC granular e observabilidade contínua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         STACKS & SKILLS MATRIX
+         ========================================== -->
+    <section class="skills-section" id="stacks">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tecnologias</span>
+          <h2 class="section-title">Matriz de <span class="gradient-text">Especialidades</span></h2>
+          <p class="section-desc">
+            Ecossistemas e tecnologias aplicadas em escala real de produção corporativa.
+          </p>
+        </div>
+
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="ai">IA & Agentes</button>
+          <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+          <button class="filter-btn" data-filter="frontend">Frontend & Mobile</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- IA -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-icon">🤖</div>
+            <div class="skill-name">Model Context Protocol</div>
+            <div class="skill-category">MCP / Context</div>
+          </div>
+          <div class="skill-card" data-category="ai">
+            <div class="skill-icon">📊</div>
+            <div class="skill-name">CodeGraph AST</div>
+            <div class="skill-category">AST Knowledge Graph</div>
+          </div>
+          <div class="skill-card" data-category="ai">
+            <div class="skill-icon">💾</div>
+            <div class="skill-name">Semantic Memory</div>
+            <div class="skill-category">Vector Embeddings</div>
+          </div>
+          <div class="skill-card" data-category="ai">
+            <div class="skill-icon">🦙</div>
+            <div class="skill-name">Local LLMs & Ollama</div>
+            <div class="skill-category">On-Premise AI</div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🔷</div>
+            <div class="skill-name">TypeScript</div>
+            <div class="skill-category">Strict Typing</div>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🟩</div>
+            <div class="skill-name">Node.js</div>
+            <div class="skill-category">Runtime Backend</div>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🩷</div>
+            <div class="skill-name">GraphQL</div>
+            <div class="skill-category">Apollo / Schemas</div>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🐘</div>
+            <div class="skill-name">PostgreSQL</div>
+            <div class="skill-category">ACID Database</div>
+          </div>
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">🔴</div>
+            <div class="skill-name">Redis</div>
+            <div class="skill-category">Caching & Queues</div>
+          </div>
+
+          <!-- Frontend / Mobile -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">⚛️</div>
+            <div class="skill-name">React.js</div>
+            <div class="skill-category">Reactive UI</div>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">▲</div>
+            <div class="skill-name">Next.js</div>
+            <div class="skill-category">SSR & App Router</div>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">📱</div>
+            <div class="skill-name">React Native & Expo</div>
+            <div class="skill-category">Mobile Multiplatform</div>
+          </div>
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">🎨</div>
+            <div class="skill-name">Tailwind CSS</div>
+            <div class="skill-category">Design Systems</div>
+          </div>
+
+          <!-- Cloud / DevOps -->
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-icon">☁️</div>
+            <div class="skill-name">AWS Serverless</div>
+            <div class="skill-category">Lambda, Cognito, S3</div>
+          </div>
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-icon">🐳</div>
+            <div class="skill-name">Docker</div>
+            <div class="skill-category">Containers</div>
+          </div>
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-icon">🔄</div>
+            <div class="skill-name">GitHub Actions</div>
+            <div class="skill-category">CI/CD Automation</div>
+          </div>
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-icon">🦀</div>
+            <div class="skill-name">Rust / C++</div>
+            <div class="skill-category">High Performance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         VITRINE DE PROJETOS AUTORAIS
+         ========================================== -->
+    <section class="projects-section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Showcase Real</span>
+          <h2 class="section-title">Vitrine de <span class="gradient-text">Projetos & Soluções</span></h2>
+          <p class="section-desc">
+            Sistemas e plataformas concebidas, arquitetadas e lideradas por mim, com foco em impacto comercial e robustez.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Fretador SaaS -->
+          <div class="project-card featured">
+            <div>
+              <div class="project-badge">⭐ Enterprise SaaS • Destaque</div>
+              <h3 class="project-title">Plataforma Fretador</h3>
+              <div class="project-role">Tech Lead & Arquiteto de Software</div>
+              <p class="project-desc">
+                Plataforma SaaS B2B corporativa de ponta a ponta para gestão de transporte fretado, mobilidade privada e roteirização inteligente para grandes empresas.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">GraphQL</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">AWS Cognito</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+            <button class="btn-details" data-project="fretador">
+              <span>Detalhes da Arquitetura</span>
+              <span>🔍</span>
+            </button>
+          </div>
+
+          <!-- QG-Barbearia -->
+          <div class="project-card">
+            <div>
+              <div class="project-badge">🏢 Solução Comercial</div>
+              <h3 class="project-title">QG-Barbearia</h3>
+              <div class="project-role">Desenvolvimento Full-Stack & API</div>
+              <p class="project-desc">
+                Plataforma multi-tenant para agendamento automatizado, gestão de fluxos comerciais e faturamento com alta concorrência de horários.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+            </div>
+            <button class="btn-details" data-project="qg">
+              <span>Detalhes da Arquitetura</span>
+              <span>🔍</span>
+            </button>
+          </div>
+
+          <!-- T3 Fretes Tracker -->
+          <div class="project-card">
+            <div>
+              <div class="project-badge">📍 Logística & Telemetria</div>
+              <h3 class="project-title">T3 Fretes Tracker</h3>
+              <div class="project-role">Arquitetura de Dados em Tempo Real</div>
+              <p class="project-desc">
+                Sistema orientado a eventos para telemetria e rastreamento de entregas com mapas reativos e atualização de coordenadas em tempo real.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Geolocalização</span>
+              </div>
+            </div>
+            <button class="btn-details" data-project="tracker">
+              <span>Detalhes da Arquitetura</span>
+              <span>🔍</span>
+            </button>
+          </div>
+
+          <!-- GuiHub Solutions -->
+          <div class="project-card">
+            <div>
+              <div class="project-badge">🌐 Portal Corporativo</div>
+              <h3 class="project-title">GuiHub Solutions</h3>
+              <div class="project-role">Ecossistema Digital & Automações</div>
+              <p class="project-desc">
+                Portal institucional e ecossistema de soluções digitais, automações comerciais e pipelines de eventos em guihub.com.br.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Automações</span>
+                <span class="tech-tag">APIs</span>
+              </div>
+            </div>
+            <button class="btn-details" data-project="guihub">
+              <span>Detalhes da Arquitetura</span>
+              <span>🔍</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TOOLING & FERRAMENTAS UTILIZADAS
+         ========================================== -->
+    <section class="tooling-section" id="tooling">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ecossistema & Ferramentas</span>
+          <h2 class="section-title">Tooling de IA & <span class="gradient-text">Engenharia no Dia a Dia</span></h2>
+          <p class="section-desc">
+            Frameworks de ponta e projetos open-source que estudo, integro e utilizo para potencializar agentes de IA e acelerar a engenharia de software:
+          </p>
+        </div>
+
+        <div class="tooling-grid">
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">⚡ CodeGraph</span>
+              <span class="tool-tag">AST Knowledge Graph</span>
+            </div>
+            <p class="tool-desc">
+              Indexação de código baseada em AST para redução drástica de tokens e navegação contextual cirúrgica em agentes (Claude Code, Gemini, Cursor).
+            </p>
+            <div class="tool-usage">Uso: Engenharia de Contexto & Agentes</div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">💾 AI-Memory</span>
+              <span class="tool-tag">Long-Term Memory</span>
+            </div>
+            <p class="tool-desc">
+              Camada de memória semântica persistente e handoff contínuo de decisões arquiteturais entre diferentes agentes de codificação.
+            </p>
+            <div class="tool-usage">Uso: Persistência de Contexto em CLIs</div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">🛠️ Agent Skills</span>
+              <span class="tool-tag">Modular Engineering</span>
+            </div>
+            <p class="tool-desc">
+              Padrões estruturados e habilidades de nível enterprise para agentes autônomos executarem testes, validação estática e CI/CD.
+            </p>
+            <div class="tool-usage">Uso: Padronização de Workflows</div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">🌐 Browser Harness</span>
+              <span class="tool-tag">Self-Healing</span>
+            </div>
+            <p class="tool-desc">
+              Harness resiliente e auto-recuperável para automação de tarefas complexas no navegador com modelos multimodais de linguagem.
+            </p>
+            <div class="tool-usage">Uso: Automação Web Agêntica</div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">🔍 REA</span>
+              <span class="tool-tag">Reverse Engineering</span>
+            </div>
+            <p class="tool-desc">
+              Toolkit agêntico para inspeção e dissecação profunda de comportamento de aplicações até análise de binários nativos.
+            </p>
+            <div class="tool-usage">Uso: Análise de Binários & Segurança</div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">🖼️ Upscayl</span>
+              <span class="tool-tag">Neural Super-Resolution</span>
+            </div>
+            <p class="tool-desc">
+              Modelos locais de super-resolução e redes neurais convolucionais para aprimoramento de imagem com aceleração gráfica.
+            </p>
+            <div class="tool-usage">Uso: Visão Computacional & Imagens</div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">🚀 DLSS5oneclick</span>
+              <span class="tool-tag">Rust & Neural Rendering</span>
+            </div>
+            <p class="tool-desc">
+              Automação em Rust para injeção de pipelines gráficos e neural-rendering em DX11 e DX12 para GPUs modernas.
+            </p>
+            <div class="tool-usage">Uso: Gráficos & Baixo Nível</div>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-header">
+              <span class="tool-name">☁️ Floci</span>
+              <span class="tool-tag">Local AWS Emulator</span>
+            </div>
+            <p class="tool-desc">
+              Emulador ultraleve e local de serviços AWS para acelerar o desenvolvimento e execução de testes de integração sem custos de cloud.
+            </p>
+            <div class="tool-usage">Uso: Testes de Nuvem Sem Custo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTATO & CONEXÕES
+         ========================================== -->
+    <section class="contact-section" id="contato">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Conecte-se</span>
+          <h2 class="section-title">Vamos Construir o <span class="gradient-text">Futuro Juntos?</span></h2>
+          <p class="section-desc">
+            Disponível para discutir arquiteturas corporativas, liderança técnica ou novos projetos estratégicos.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-cards">
+            <a href="https://www.linkedin.com/in/guilherme-casagrande-771a27160/" target="_blank" class="contact-card">
+              <div class="contact-card-icon">💼</div>
+              <div class="contact-card-info">
+                <h4>LinkedIn</h4>
+                <p>guilherme-casagrande-771a27160</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/GuilhermeMAG" target="_blank" class="contact-card">
+              <div class="contact-card-icon">🐙</div>
+              <div class="contact-card-info">
+                <h4>GitHub</h4>
+                <p>@GuilhermeMAG</p>
+              </div>
+            </a>
+
+            <a href="http://guihub.com.br/" target="_blank" class="contact-card">
+              <div class="contact-card-icon">🌐</div>
+              <div class="contact-card-info">
+                <h4>Website</h4>
+                <p>guihub.com.br</p>
+              </div>
+            </a>
+
+            <a href="mailto:g.casagrande@uni9.edu.br" class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-info">
+                <h4>E-mail</h4>
+                <p>g.casagrande@uni9.edu.br</p>
+              </div>
+            </a>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <h3 style="margin-bottom: 1.5rem; font-size: 1.3rem;">Enviar Mensagem Direta</h3>
+            
+            <div class="form-group">
+              <label for="form-name" class="form-label">Seu Nome</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Ex: Roberto Silva" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Seu E-mail</label>
+              <input type="email" id="form-email" class="form-control" placeholder="seuemail@empresa.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Assunto</label>
+              <input type="text" id="form-subject" class="form-control" placeholder="Oportunidade / Arquitetura / Parceria" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Mensagem</label>
+              <textarea id="form-message" rows="4" class="form-control" placeholder="Descreva sua proposta ou projeto..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              <span>Enviar via E-mail</span>
+              <span>✉️</span>
+            </button>
+            <div id="form-feedback" style="display: none; margin-top: 1rem; color: var(--green); font-size: 0.9rem; text-align: center;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       MODAL DE ARQUITETURA
+       ========================================== -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fechar Modal">&times;</button>
+      <h3 id="modal-title" style="margin-bottom: 1.25rem; font-size: 1.35rem; color: var(--cyan);"></h3>
+      <div id="modal-body"></div>
     </div>
+  </div>
 
-    <!-- Main -->
-    <div id="main">
-
-        <!-- Intro -->
-        <section id="top" class="one dark cover">
-            <div class="container">
-
-                <header>
-                    <h2 class="alt"> Guilherme Augusto Borges Casagrande </h2>
-                    <p class="alt">Programador Sql Sr</p>
-                </header>
-
-                <footer>
-                    <a href="#contact" class="button scrolly">Contato</a>
-                </footer>
-
-            </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="two">
-            <div class="container">
-
-
-                <header>
-                    <h2>Projetos</h2>
-                </header>
-
-                <p>...</p>
-
-                <div class="row">
-                    <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="https://alphamagtec.000webhostapp.com/" target="_blank" class="image fit"><img src="images/printGglassArticle.jpg" alt="Artigo" /></a>
-                            <header>
-                                <h3> Artigo sobre o Google Glass </h3>
-                            </header>
-                        </article>
-                        <article class="item">
-                            <a href="https://www.youtube.com/channel/UCy2NMJqnripDK8a1Xqy0QoQ" target="_blank" class="image fit"><img src="images/PrintYT.jpg" alt="Video" /></a>
-                            <header>
-                                <h3> Canal no YouTube </h3>
-                            </header>
-                        </article>
-                    </div>
-                    <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="https://github.com/GuilhermeMAG/Be-The-Hero" target="_blank" class="image fit"><img src="images/BeTheHeroLogon.jpg" alt="Projeto" /></a>
-                            <header>
-                                <h3> Projeto Be The Hero </h3>
-                            </header>
-                        </article>
-                        <article class="item">
-                            <a href="https://hotm.art/njf1uJn" target="_blank" class="image fit"><img src="images/MNRA (2).gif" alt="Mão na Roda AE!" /></a>
-                            <header>
-                                <h3> Mão na Roda AE!</h3>
-                            </header>
-                        </article>
-                    </div>
-                    <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="images/MeuLogo1.png" alt="Logo" /></a>
-                            <header>
-                                <h3> Meu Logo </h3>
-                            </header>
-                        </article>
-                        <article class="item">
-                            <canvas id="canvas"></canvas>
-                            <script src="/GuilhermeMAG.github.io/Projects/snake.js"></script>
-                            <header>
-                                <h3> Snake Game </h3>
-                            </header>
-                        </article>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- About Me -->
-        <section id="about" class="three">
-            <div class="container">
-
-                <header>
-                    <h2>Sobre Mim</h2>
-                </header>
-                <pre>- Programador Sql Sr na Quality S.A.-
-                    Amplo conhecimento nas tecnologias, ferramentas e conceitos abaixo:
-                    - HTML5 - CSS3 - JavaScript -
-                    - React.js - React-Native -
-                    - Node.js - Python - C# - .NET -
-                    - SQL Server - MySql - MongoDb -
-                    - Git - Visual Studio - VsCode -
-                    - OutSystems - No Code - Man-it - Low Code -
-                    - DevOps - Scrum -
-                    
-                    Github - https://github.com/GuilhermeMAG
-                </pre>
-                <a href="#" class="image featured"><img src="images/wp2438000-program-wallpapers.jpg" alt="" /></a>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="four">
-            <div class="container">
-                <!--
-							<header>
-								<h2>Contato</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p> -->
-
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-y8N6xTELs0TPNNBMhvdbEdH8v_yi4ZRtGiFk6lBbhZWmDA/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-
-            </div>
-        </section>
-
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-quote">
+        "Simplicidade e eficiência não são metas acidentais: são o resultado intencional de uma boa arquitetura de software."
+      </p>
+      <p class="footer-copy">
+        &copy; 2026 Guilherme Casagrande. Hospedado com orgulho no GitHub Pages.
+      </p>
     </div>
+  </footer>
 
-    <!-- Footer -->
-    <div id="footer">
-
-        <!-- Copyright -->
-        <ul class="copyright">
-            <li>&copy; All rights reserved.</li>
-            <li>Design: <a href="https://www.linkedin.com/in/guilherme-augusto-borges-casagrande-771a27160/" target="_blank">Guilherme Augusto Borges Casagrande</a></li>
-        </ul>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+  <!-- Scripts -->
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
