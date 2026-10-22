@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const typewriterElement = document.getElementById('typewriter-text');
   const phrases = [
     'Tech Lead & Software Architect',
+    'CTO & Arquiteto de Plataformas SaaS',
     'Engenheiro de Agentes Autônomos & LLMs',
-    'Arquitetura SaaS Enterprise de Alta Escala',
     'Full-Stack: Node.js • TypeScript • React • GraphQL',
     'Otimização de Performance & Eficiência'
   ];
@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (!isDeleting && charIndex === currentPhrase.length) {
-      typeSpeed = 2200; // Pausa após completar a frase
+      typeSpeed = 2200;
       isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
-      typeSpeed = 400; // Pausa antes de digitar a próxima frase
+      typeSpeed = 400;
     }
 
     setTimeout(typeEffect, typeSpeed);
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Destaques de Engenharia:</h4>
           <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.7;">
             <li><b>Microsserviços & GraphQL:</b> Servidor centralizado em Node.js/TypeScript com schemas unificados e consultas sob demanda de alta eficiência.</li>
-            <li><b>Mesa Operacional Web:</b> Cockpit reativo em Next.js/React com Tailwind CSS, gestão de rotas e telemetria em tempo real.</li>
+            <li><b>Mesa Operacional Web:</b> Cockpit reativo em Next.js/React com Tailwind CSS, dashboards analíticos e roteirização otimizada.</li>
             <li><b>App Mobile Multiplataforma:</b> Desenvolvido em React Native e Expo, com arquitetura offline-first para motoristas e passageiros.</li>
             <li><b>Nuvem & Segurança:</b> AWS Cognito para autenticação federada e RBAC, Lambdas serverless, PostgreSQL com isolamento seguro multi-tenant.</li>
           </ul>
@@ -165,26 +165,77 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `
     },
-    qg: {
-      title: '💈 QG-Barbearia — Multi-Tenant Service Platform',
+    nlogika: {
+      title: '🌐 NLogika — Portal SaaS Core Platform (Monorepo)',
       content: `
         <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Visão do Produto</h4>
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Liderança Técnica & Arquitetura (CTO)</h4>
           <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
-            Plataforma comercial para automação de agendamentos, fluxos operacionais e gestão financeira de unidades de atendimento.
+            Repositório central e Application Shell do Portal SaaS Multi-tenant da NLogika, servindo como o chassi arquitetural básico para acoplamento dinâmico de todos os submódulos de software corporativo da empresa.
           </p>
         </div>
         <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Aspectos Técnicos:</h4>
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Destaques de Engenharia:</h4>
           <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.7;">
-            <li>Interface moderna e responsiva orientada à conversão e experiência de autoatendimento rápida.</li>
-            <li>API transacional estruturada para controle estrito de concorrência de horários e faturamento.</li>
+            <li><b>Isolamento Estrito de Tenants (LGPD):</b> Arquitetura focada na segurança absoluta de dados e compliance estrito com a Lei Geral de Proteção de Dados.</li>
+            <li><b>Monorepo Escalável:</b> Gestão modular de pacotes com reaproveitamento de componentes de UI, utilitários e serviços de infraestrutura.</li>
+            <li><b>Eficiência de Custos em Cloud:</b> Modelagem otimizada de recursos para baixo consumo de instâncias e máxima performance de entrega.</li>
+          </ul>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Monorepo</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Multi-tenant</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">LGPD Compliance</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Application Shell</span>
+        </div>
+      `
+    },
+    gcradius: {
+      title: '📞 GCRadius — Discador Automático & CRM de Vendas SaaS (PWA)',
+      content: `
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Automação Comercial B2B</h4>
+          <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
+            Plataforma B2B instalável (Progressive Web App) para prospecção acelerada, gestão ágil de leads, discagem rápida automatizada e acompanhamento de métricas comerciais de equipes.
+          </p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Destaques Técnicos:</h4>
+          <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.7;">
+            <li><b>Funil de Vendas Interativo (Kanban):</b> Movimentação reativa de leads através das etapas de negociação com persistência em tempo real.</li>
+            <li><b>PWA Instalável:</b> Operação com alta velocidade, armazenamento local otimizado e atalhos rápidos para operadores.</li>
+            <li><b>Telemetria de Vendas:</b> Dashboards de taxa de conversão, tempo de contato e relatórios de produtividade.</li>
+          </ul>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">PWA</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">CRM SaaS</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Kanban Pipeline</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Discagem Rápida</span>
+        </div>
+      `
+    },
+    events: {
+      title: '🎟️ GuiHub EventPlatform — Plataforma Completa de Gestão de Eventos',
+      content: `
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Gestão de Eventos em Escala</h4>
+          <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
+            Aplicação web full-stack desenvolvida do zero para criação, divulgação, inscrição e credenciamento de eventos corporativos com alta disponibilidade.
+          </p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Destaques de Engenharia:</h4>
+          <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.7;">
+            <li>Deploy contínuo em produção na Vercel (<a href="https://guihub-events-web-chi.vercel.app/" target="_blank" style="color: var(--cyan);">Demo ao Vivo</a>).</li>
+            <li>Arquitetura modular de componentes, validação estrita de formulários e geração dinâmica de ingressos.</li>
           </ul>
         </div>
         <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
           <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">React</span>
-          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Node.js</span>
-          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">PostgreSQL</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Vercel Deploy</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Full-Stack</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Ticketing</span>
         </div>
       `
     },
@@ -211,19 +262,26 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `
     },
-    guihub: {
-      title: '🌐 GuiHub Solutions & Plataforma de Automação',
+    qg: {
+      title: '💈 QG-Barbearia — Multi-Tenant Service Platform',
       content: `
         <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Ecossistema Corporativo</h4>
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Visão do Produto</h4>
           <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
-            Portal institucional e hub de automações digitais, discadores automatizados e pipelines de eventos corporativos (<a href="http://guihub.com.br/" target="_blank" style="color: var(--cyan);">guihub.com.br</a>).
+            Plataforma comercial para automação de agendamentos, fluxos operacionais e gestão financeira de unidades de atendimento.
           </p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Aspectos Técnicos:</h4>
+          <ul style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.7;">
+            <li>Interface moderna e responsiva orientada à conversão e experiência de autoatendimento rápida.</li>
+            <li>API transacional estruturada para controle estrito de concorrência de horários e faturamento.</li>
+          </ul>
         </div>
         <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
           <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">React</span>
-          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Automações</span>
-          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">APIs REST</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">Node.js</span>
+          <span class="tech-tag" style="background: rgba(0,242,254,0.1); color: var(--cyan);">PostgreSQL</span>
         </div>
       `
     }
