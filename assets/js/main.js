@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const subject = document.getElementById('form-subject').value;
       const message = document.getElementById('form-message').value;
 
-      const mailtoUrl = `mailto:g.casagrande@uni9.edu.br?subject=${encodeURIComponent('[Contato Portfólio] ' + subject)}&body=${encodeURIComponent('Nome: ' + name + '\nEmail: ' + email + '\n\nMensagem:\n' + message)}`;
+      const mailtoUrl = `mailto:guihubmag@gmail.com?subject=${encodeURIComponent('[Contato Portfólio] ' + subject)}&body=${encodeURIComponent('Nome: ' + name + '\nEmail: ' + email + '\n\nMensagem:\n' + message)}`;
       
       window.location.href = mailtoUrl;
 

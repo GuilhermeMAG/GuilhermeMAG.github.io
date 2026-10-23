@@ -60,7 +60,9 @@ def test_contact_links_integrity():
     assert "guihub.com.br" not in html, "Broken/unresolved domain 'guihub.com.br' still present in index.html"
     assert "https://wa.me/5511951464881" in html, "Missing WhatsApp contact card link"
     assert "guilherme-casagrande-771a27160" in html, "Missing correct LinkedIn profile ID"
-    print("  [OK] Contact cards have verified working URLs (WhatsApp & LinkedIn).")
+    assert "guihubmag@gmail.com" in html, "Missing updated professional email guihubmag@gmail.com in index.html"
+    assert "uni9.edu.br" not in html, "Deprecated academic email uni9.edu.br still present in index.html"
+    print("  [OK] Contact cards have verified working URLs (WhatsApp, LinkedIn & Email).")
 
 def main():
     print("=" * 60)
