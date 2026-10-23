@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const typewriterElement = document.getElementById('typewriter-text');
   const phrases = [
     'Tech Lead & Software Architect',
+    'Engenheiro de Software & Desenvolvedor Full-Stack',
     'CTO & Arquiteto de Plataformas SaaS',
-    'Engenheiro de Agentes Autônomos & LLMs',
-    'Full-Stack: Node.js • TypeScript • React • GraphQL',
-    'Otimização de Performance & Eficiência'
+    'Engenharia de Agentes Autônomos & LLMs',
+    'Full-Stack: Node.js • TypeScript • React • GraphQL'
   ];
 
   let phraseIndex = 0;
