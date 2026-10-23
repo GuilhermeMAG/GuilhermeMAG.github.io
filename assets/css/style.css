@@ -498,6 +498,12 @@ h1, h2, h3, h4 {
   animation-delay: 2s;
 }
 
+.card-bottom-right {
+  bottom: 15px;
+  right: -25px;
+  animation-delay: 3s;
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -1044,7 +1050,7 @@ h1, h2, h3, h4 {
     height: 240px;
   }
 
-  .card-top-right, .card-bottom-left {
+  .card-top-right, .card-bottom-left, .card-bottom-right {
     display: none;
   }
 }
