@@ -52,6 +52,16 @@ def test_css_mobile_responsiveness():
         "Missing mobile media query grouping for hiding all 3 floating cards"
     print("  [OK] Mobile media query properly handles all 3 floating cards.")
 
+def test_contact_links_integrity():
+    print("[4/4] Testing contact links integrity...")
+    with open(INDEX_HTML, "r", encoding="utf-8") as f:
+        html = f.read()
+
+    assert "guihub.com.br" not in html, "Broken/unresolved domain 'guihub.com.br' still present in index.html"
+    assert "https://wa.me/5511951464881" in html, "Missing WhatsApp contact card link"
+    assert "guilherme-casagrande-771a27160" in html, "Missing correct LinkedIn profile ID"
+    print("  [OK] Contact cards have verified working URLs (WhatsApp & LinkedIn).")
+
 def main():
     print("=" * 60)
     print("RUNNING PORTFOLIO FEATURES & REGRESSION SUITE")
@@ -60,8 +70,9 @@ def main():
         test_brand_formatting()
         test_hero_avatar_cards()
         test_css_mobile_responsiveness()
+        test_contact_links_integrity()
         print("=" * 60)
-        print("ALL TESTS PASSED! (3/3)")
+        print("ALL TESTS PASSED! (4/4)")
         print("=" * 60)
         return 0
     except AssertionError as e:

@@ -2,7 +2,7 @@
 
 > **Portfólio Web Oficial de Guilherme Casagrande — Tech Lead & Software Architect**  
 > Hospedado publicamente no GitHub Pages: **[guilhermemag.github.io](https://guilhermemag.github.io)**  
-> Domínio personalizado opcional: **[guihub.com.br](http://guihub.com.br/)**
+> Portfólio oficial: **[guilhermemag.github.io](https://guilhermemag.github.io)**
 
 ---
 
