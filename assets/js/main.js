@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const phrases = [
     'Tech Lead & Software Architect',
     'Engenheiro de Software & Desenvolvedor Full-Stack',
-    'CTO & Arquiteto de Plataformas SaaS',
+    'Arquiteto de Plataformas SaaS',
     'Engenharia de Agentes Autônomos & LLMs',
     'Full-Stack: Node.js • TypeScript • React • GraphQL'
   ];
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: '🌐 Portal SaaS Core Platform (Monorepo)',
       content: `
         <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Liderança Técnica & Arquitetura (CTO)</h4>
+          <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Liderança Técnica & Arquitetura</h4>
           <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
             Repositório central e Application Shell do Portal SaaS Multi-tenant, servindo como o chassi arquitetural básico para acoplamento dinâmico de todos os submódulos de software corporativo da empresa.
           </p>
