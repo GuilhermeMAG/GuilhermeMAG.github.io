@@ -32,7 +32,7 @@ def test_hero_avatar_cards():
         html = f.read()
 
     expected_cards = [
-        ("card-top-right", "Tech Lead / CTO"),
+        ("card-top-right", "Tech Lead"),
         ("card-bottom-left", "Autonomous Agents"),
         ("card-bottom-right", "Full-Stack Engineer")
     ]
