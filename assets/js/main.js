@@ -186,13 +186,13 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `
     },
-    nlogika: {
-      title: '🌐 NLogika — Portal SaaS Core Platform (Monorepo)',
+    saasPlatform: {
+      title: '🌐 Portal SaaS Core Platform (Monorepo)',
       content: `
         <div style="margin-bottom: 1.5rem;">
           <h4 style="color: var(--cyan); margin-bottom: 0.5rem;">Liderança Técnica & Arquitetura (CTO)</h4>
           <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
-            Repositório central e Application Shell do Portal SaaS Multi-tenant da NLogika, servindo como o chassi arquitetural básico para acoplamento dinâmico de todos os submódulos de software corporativo da empresa.
+            Repositório central e Application Shell do Portal SaaS Multi-tenant, servindo como o chassi arquitetural básico para acoplamento dinâmico de todos os submódulos de software corporativo da empresa.
           </p>
         </div>
         <div style="margin-bottom: 1.5rem;">
@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = document.getElementById('form-message').value;
 
       const mailtoUrl = `mailto:guihubmag@gmail.com?subject=${encodeURIComponent('[Contato Portfólio] ' + subject)}&body=${encodeURIComponent('Nome: ' + name + '\nEmail: ' + email + '\n\nMensagem:\n' + message)}`;
-      
+
       window.location.href = mailtoUrl;
 
       if (formFeedback) {
